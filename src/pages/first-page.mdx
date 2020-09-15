@@ -1,0 +1,49 @@
+---
+title: First Page
+path: /first-page
+date: 2020-09-14
+author: Joe Vaughn
+---
+
+
+import { graphql } from "gatsby"
+import imageUrl from '../images/optimized/yardshot-1.jpg'
+import PurpleBorder from "../components/purple-border"
+
+<h1>{props.pageContext.frontmatter.title}</h1>
+<span>{props.pageContext.frontmatter.author}</span>
+
+You can import your own components.
+<span>
+<img src={imageUrl} alt="Image alt" width="800" height="600"/>
+</span>
+
+
+
+
+
+<div>
+(Blog post content, components, etc.)
+</div>
+
+
+# My Awesome Page
+
+Here's a paragraph, followed by a paragraph with data!
+
+<p>{props.data.site.siteMetadata.description}</p>
+
+export default PurpleBorder
+
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        description
+        title
+      }
+    }
+  }
+`
+

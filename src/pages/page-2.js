@@ -22,7 +22,7 @@ const SecondPage = () => (
     <p>Looking for a more go-big-or-go-home screen for a larger group? Many people rent an inflatable screen. You can also skip the screen 
       and projector altogether by buying an outdoor television.</p>
 
-    <h2></h2>  
+    <h2>Getting Started with Audio for your backyard projector.</h2>  
     <p>You may have a picture, but now you need sound to go with your DIY outdoor movie screen. A basic soundbar is relatively easy to move out 
       and hook up to a projector if it is compatible and if you have one on hand. If you have an outdoor Bluetooth speaker, you may be able to 
       connect it to your projector as well, depending on capabilities. Or consider buying a durable, affordable speaker set (a three-piece set is 
