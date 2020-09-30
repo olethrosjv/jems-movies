@@ -9,13 +9,14 @@ author: Joe Vaughn
 import { graphql } from "gatsby"
 import imageUrl from '../images/optimized/yardshot-1.jpg'
 import PurpleBorder from "../components/purple-border"
+import Layout from "../components/layout.js"
 
 <h1>{props.pageContext.frontmatter.title}</h1>
 <span>{props.pageContext.frontmatter.author}</span>
 
 You can import your own components.
 <span>
-<img src={imageUrl} alt="Image alt" width="800" height="600"/>
+<img src={imageUrl} alt="Image alt" width="1000" height="750"/>
 </span>
 
 

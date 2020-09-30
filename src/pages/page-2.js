@@ -4,6 +4,8 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import imageUrl from '../images/optimized/projector-stand.jpg'
+
 const SecondPage = () => (
   <Layout>
     <SEO title="Setting Up" />
@@ -21,6 +23,10 @@ const SecondPage = () => (
       year, the wind can be a huge factor.</p>
     <p>Looking for a more go-big-or-go-home screen for a larger group? Many people rent an inflatable screen. You can also skip the screen 
       and projector altogether by buying an outdoor television.</p>
+
+      <span>
+        <img src={imageUrl} alt="Projector Stand" width="1000" height="860"/>
+      </span>
 
     <h2>Getting Started with Audio for your backyard projector.</h2>  
     <p>You may have a picture, but now you need sound to go with your DIY outdoor movie screen. A basic soundbar is relatively easy to move out 
