@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
@@ -37,9 +38,16 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Made By
+        <Link to="/page-2/">Go to page 2</Link> <br />
+        <Link to="/using-typescript/">Deloper Link: TS</Link> <br />
+        <Link to="/setting-up/">Setting Up</Link> <br />
+        <Link to="/first-page/">Mdx starter</Link> <br />
+        <Link to="/review-list/">Reviews</Link>
+         <div>
+            © {new Date().getFullYear()}, Made By
           {` `}
           <a href="http://joevau4.freehostia.com/joevaughn/">Joe Vaughn</a>
+          </div>
         </footer>
       </div>
     </>

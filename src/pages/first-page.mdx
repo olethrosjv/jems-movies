@@ -11,14 +11,25 @@ import imageUrl from '../images/optimized/yardshot-1.jpg'
 import PurpleBorder from "../components/purple-border"
 import Layout from "../components/layout.js"
 
+
+<Layout>
 <h1>{props.pageContext.frontmatter.title}</h1>
 <span>{props.pageContext.frontmatter.author}</span>
 
 You can import your own components.
+<div
+ style={{
+          margin: `0 auto`,
+          maxWidth: 1060,
+          padding: `0 1.1rem 1.45rem`,
+        }}
+>
+
 <span>
 <img src={imageUrl} alt="Image alt" width="1000" height="750"/>
 </span>
 
+</div>
 
 
 
@@ -33,6 +44,8 @@ You can import your own components.
 Here's a paragraph, followed by a paragraph with data!
 
 <p>{props.data.site.siteMetadata.description}</p>
+
+</Layout>
 
 export default PurpleBorder
 
